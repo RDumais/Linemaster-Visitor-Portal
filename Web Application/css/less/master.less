@@ -1,0 +1,499 @@
+// out: ../master.css, compress: false, strictMath: true
+
+/* ==========================================================================
+   Start #14043 Linemaster Visitor CSS
+   ========================================================================== */
+
+@gray: #cfcfcf;
+@orange: #f58220;
+@rosecolor: #DB6576;
+@peachcolor: #ffaa71;
+@maintextcolor: #08415C;
+@buttonsize: 35px;
+@homebutton: 50px;
+@headercolor: #FFEDE1;
+@containercolor: #FFEDE1;
+@100vh: 100vh;
+@100vw: 100vw;
+
+/* Globals
+   ========================================================================== */
+
+* {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Containers
+   ========================================================================== */
+
+body {
+  max-width: @100vw;
+  max-height: @100vh;
+  height: @100vh;
+  width: @100vw;
+}
+
+.container-fluid {
+  background-color: @containercolor;
+  height: 90vh;
+  position: relative;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+/* Scaffolding
+   ========================================================================== */
+
+#completeRow {
+  display: table;
+  height: 100%;
+}
+
+#completeRow > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.fullHeightRow {
+  height: 100%;
+}
+
+.submitRow {
+  padding-top: 10vh;
+}
+
+/* Modules
+   ========================================================================== */
+
+/* Landing Page Clock */
+#time {
+  color: @maintextcolor;
+  position: absolute;
+  top: 20px;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+/* Return to Landing Page */
+.homeReset {
+  position: absolute;
+  left: 8vw;
+  font-size: @homebutton;
+  color: @maintextcolor;
+}
+
+/* Camera Module */
+#my_result {
+  display: none;
+}
+
+#my_camera,
+#my_result {
+  margin-bottom: 5vh;
+  padding: 0;
+}
+
+#snapshotButton {
+  width: 100%;
+}
+
+video {
+  width: 400px !important;
+  height: 300px !important;
+}
+
+video,
+#my_result > img {
+  width: 400px !important;
+  height: 300px !important;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: 1px solid @rosecolor !important;
+}
+
+/* Utility Classes
+   ========================================================================== */
+
+.bottomPadding {
+  padding-bottom: 5vh;
+}
+
+.pull-left {
+  float: left !important;
+  line-height: unset !important;
+  color: @rosecolor !important;
+}
+
+.pull-right {
+  float: right !important;
+  line-height: unset !important;
+}
+
+.variableHolder {
+  color: @rosecolor;
+}
+
+.with-errors {
+  color: red;
+}
+
+/* Images
+   ========================================================================== */
+
+#logo {
+  max-width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10vh;
+}
+
+#miniLogo {
+
+  max-width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Animations & Animation Components
+   ========================================================================== */
+
+.breeding-rhombus-spinner {
+  height: 65px;
+  width: 65px;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.breeding-rhombus-spinner,
+.breeding-rhombus-spinner * {
+  box-sizing: border-box;
+}
+
+.breeding-rhombus-spinner .rhombus {
+  height: calc(65px / 7.5);
+  width: calc(65px / 7.5);
+  animation-duration: 2000ms;
+  top: calc(65px / 2.3077);
+  left: calc(65px / 2.3077);
+  background-color: @rosecolor;
+  position: absolute;
+  animation-iteration-count: infinite;
+}
+
+.breeding-rhombus-spinner .rhombus:nth-child(2n+0) {
+  margin-right: 0;
+}
+
+.breeding-rhombus-spinner .rhombus.child-1 {
+  animation-name: breeding-rhombus-spinner-animation-child-1;
+  animation-delay: calc(100ms * 1);
+}
+
+.breeding-rhombus-spinner .rhombus.child-2 {
+  animation-name: breeding-rhombus-spinner-animation-child-2;
+  animation-delay: calc(100ms * 2);
+}
+
+.breeding-rhombus-spinner .rhombus.child-3 {
+  animation-name: breeding-rhombus-spinner-animation-child-3;
+  animation-delay: calc(100ms * 3);
+}
+
+.breeding-rhombus-spinner .rhombus.child-4 {
+  animation-name: breeding-rhombus-spinner-animation-child-4;
+  animation-delay: calc(100ms * 4);
+}
+
+.breeding-rhombus-spinner .rhombus.child-5 {
+  animation-name: breeding-rhombus-spinner-animation-child-5;
+  animation-delay: calc(100ms * 5);
+}
+
+.breeding-rhombus-spinner .rhombus.child-6 {
+  animation-name: breeding-rhombus-spinner-animation-child-6;
+  animation-delay: calc(100ms * 6);
+}
+
+.breeding-rhombus-spinner .rhombus.child-7 {
+  animation-name: breeding-rhombus-spinner-animation-child-7;
+  animation-delay: calc(100ms * 7);
+}
+
+.breeding-rhombus-spinner .rhombus.child-8 {
+  animation-name: breeding-rhombus-spinner-animation-child-8;
+  animation-delay: calc(100ms * 8);
+}
+
+.breeding-rhombus-spinner .rhombus.big {
+  height: calc(65px / 3);
+  width: calc(65px / 3);
+  animation-duration: 2000ms;
+  top: calc(65px / 3);
+  left: calc(65px / 3);
+  background-color: @rosecolor;
+  animation: breeding-rhombus-spinner-animation-child-big 2s infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes breeding-rhombus-spinner-animation-child-1 {
+  50% {
+    transform: translate(-325%, -325%);
+  }
+}
+
+@keyframes breeding-rhombus-spinner-animation-child-2 {
+  50% {
+    transform: translate(0, -325%);
+  }
+}
+
+@keyframes breeding-rhombus-spinner-animation-child-3 {
+  50% {
+    transform: translate(325%, -325%);
+  }
+}
+
+@keyframes breeding-rhombus-spinner-animation-child-4 {
+  50% {
+    transform: translate(325%, 0);
+  }
+}
+
+@keyframes breeding-rhombus-spinner-animation-child-5 {
+  50% {
+    transform: translate(325%, 325%);
+  }
+}
+
+@keyframes breeding-rhombus-spinner-animation-child-6 {
+  50% {
+    transform: translate(0, 325%);
+  }
+}
+
+@keyframes breeding-rhombus-spinner-animation-child-7 {
+  50% {
+    transform: translate(-325%, 325%);
+  }
+}
+
+@keyframes breeding-rhombus-spinner-animation-child-8 {
+  50% {
+    transform: translate(-325%, 0);
+  }
+}
+
+@keyframes breeding-rhombus-spinner-animation-child-big {
+  50% {
+    transform: scale(0.5);
+  }
+}
+
+/* Text
+   ========================================================================== */
+
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: @headercolor;
+}
+
+#completeMainText {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+#landingHeader {
+  background-color: @containercolor;
+}
+
+#prescreenQuestion {
+  margin-bottom: 5vh;
+}
+
+#welcomeText {
+  margin-top: 15vh;
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 0;
+  color: @maintextcolor;
+}
+
+.questionText {
+  font-size: 40px;
+  color: @maintextcolor;
+}
+
+/* Forms % Form Components
+   ========================================================================== */
+
+form {
+  padding: 5vh 0 10vh 0;
+  height: 70vh;
+  margin: 0 !important;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  font-size: 24px !important;
+  border-bottom: 2px solid rgb(255, 213, 185) !important;
+  text-align: left;
+
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+label {
+  display: block;
+  width: 100%;
+  margin: 25px auto 0;
+  text-align: left;
+  font-size: 24px;
+  color: @gray;
+  text-transform: uppercase;
+}
+
+label span {
+  font-size: 24px;
+  color: @rosecolor;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+body > div.container-fluid > form > div > div.col-md-9.bottomPadding > label > span.select2.select2-container.select2-container--default {
+  width: 100% !important;
+  height: 41px !important;
+}
+
+#hostLabel > span.select2.select2-container.select2-container--default.select2-container--above > span.selection > span {
+  height: 41px !important;
+}
+
+#hostLabel > span.select2.select2-container.select2-container--default.select2-container--above > span.selection > span > span.select2-selection__arrow > b {
+  margin-top: 5px !important;
+}
+
+#hostLabel > span.select2.select2-container.select2-container--default.select2-container--focus > span.selection > span > span,
+#hostLabel > span.select2.select2-container.select2-container--default > span.selection > span > span {
+  padding-left: 0 !important;
+}
+
+
+
+#prescreenForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#select2-reasonSelected-container {
+  padding: 0 !important;
+}
+
+#select2-hostSelected-container {
+  padding: 0 !important;
+}
+
+#select2-womy-container {
+  line-height: 41px !important;
+}
+
+.form-group {
+  margin-bottom: 0;
+  font-size: 24px;
+}
+
+.select2-container {
+  font-size: 24px !important;
+}
+
+.select2-container--default {
+  width: 100% !important;
+  max-width: 650px !important;
+  height: 41px !important;
+  border-bottom: 2px solid rgb(255, 213, 185) !important;
+}
+
+.select2-container--default .select2-selection--single {
+  border: none !important;
+  background: none !important;
+  border-radius: 4px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 41px !important;
+}
+
+/* Specific Components
+   ========================================================================== */
+
+/* Countdown timer for returning to landing page */
+#countdown {
+  margin-top: 20px;
+}
+
+/* Returning text from AJAX call */
+#visitorConfirmation {
+  margin-top: 5vh;
+}
+
+/* Check mark from sign-in and sign-out confirmation screen */
+.finishedCheck {
+  color: @rosecolor;
+  font-size: 80px;
+  display: block;
+}
+
+/* Buttons
+   ========================================================================== */
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: none;
+}
+
+.btn {
+  transition: 0.5s;
+  background-size: 200% auto;
+  font-size: 40px;
+  box-shadow: 0 0 20px #eee;
+  margin-left: auto;
+  margin-right: auto;
+  height: 5vh;
+  width: 100%;
+  border-color: black;
+  color: @maintextcolor;
+  line-height: 4vh;
+  font-weight: 300;
+}
+
+.fillButton {
+  background: @rosecolor;
+  border: none;
+  color: white;
+}
+
+.outlineButton {
+  border-color: @rosecolor;
+}
+
+/* ==========================================================================
+   End #14043 Linemaster Visitor CSS
+   ========================================================================== */
