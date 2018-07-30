@@ -13,21 +13,18 @@
 //Start the session for the visitor
 session_start();
 
-//Determine which variables to set based on if the visitor is a previous visitor
 //Set session variables, trim potential whitespace of variables
-if ($_SESSION['isPreviousVisitor'] == TRUE){
-    $_SESSION['phone'] = trim($_SESSION['phone']);
-    $_SESSION['host'] = trim($_POST['host']);
-    $_SESSION['reason'] = trim($_POST['reason']);
-}
-else if ($_SESSION['isPreviousVisitor'] == FALSE){
+$_SESSION['phone'] = trim($_SESSION['phone']);
+$_SESSION['host'] = trim($_POST['host']);
+$_SESSION['reason'] = trim($_POST['reason']);
+
+//Determine which variables to set based on if the visitor is a previous visitor
+if ($_SESSION['isPreviousVisitor'] == FALSE){
     $_SESSION['name'] = trim($_POST['name']);
-    $_SESSION['phone'] = trim($_POST['phone']);
-    $_SESSION['host'] = trim($_POST['host']);
-    $_SESSION['reason'] = trim($_POST['reason']);
     $_SESSION['company'] = trim($_POST['company']);
     $_SESSION['email'] = trim($_POST['email']);
 }
+
 //Create new session variables based on the visitor's name
 $_SESSION['firstnamevisitor'] = strtok($_SESSION['name'], ' ');
 
