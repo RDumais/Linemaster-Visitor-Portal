@@ -15,15 +15,15 @@ Webcam.set({
 });
 
 //Allow visitor to see the webcam.
-Webcam.attach('#my_camera');
+Webcam.attach('#cameraView');
 
 //Function to take a photo with the webcam.
 function take_snapshot() {
     Webcam.snap(function (data_uri) {
-        document.getElementById('my_result').innerHTML = '<img src="' + data_uri + '"/>';
+        document.getElementById('cameraResult').innerHTML = '<img src="' + data_uri + '"/>';
         imageData = data_uri;
         var raw_image_data = data_uri.replace(/^data\:image\/\w+\;base64\,/, '');
-        document.getElementById('mydata').value = raw_image_data;
+        document.getElementById('photoData').value = raw_image_data;
     });
 }
 
@@ -33,8 +33,8 @@ $("#finishButton").hide();
 
 //Toggle the availble button options.
 $("#snapshotButton").click(function () {
-    $("#my_camera").hide();
-    $("#my_result").show();
+    $("#cameraView").hide();
+    $("#cameraResult").show();
     $("#snapshotButton").hide();
     $("#clearButton").show();
     $("#finishButton").show();
@@ -42,8 +42,8 @@ $("#snapshotButton").click(function () {
 });
 
 $("#clearButton").click(function () {
-    $("#my_camera").show();
-    $("#my_result").hide();
+    $("#cameraView").show();
+    $("#cameraResult").hide();
     $("#snapshotButton").show();
     $("#clearButton").hide();
     $("#finishButton").hide();
@@ -52,5 +52,5 @@ $("#clearButton").click(function () {
 
 //Submit the photo to server on button press.
 function sendPhoto() {
-    document.getElementById('myform').submit();
+    document.getElementById('webcamForm').submit();
 }

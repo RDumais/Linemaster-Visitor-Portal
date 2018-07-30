@@ -23,7 +23,7 @@ require('../../php/connect.php');
 if ($_SESSION['isSigningOut'] == FALSE) {
 
     //Handle base64 -> HEXADECIMAL conversion.
-    $encodedData = $_POST['mydata'];
+    $encodedData = $_POST['photoData'];
     $binaryData = base64_decode($encodedData);
     $_SESSION['photo'] = bin2hex($binaryData);
 
