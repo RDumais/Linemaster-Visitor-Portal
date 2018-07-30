@@ -56,11 +56,11 @@ body {
   color: #08415c;
 }
 /* Camera Module */
-#my_result {
+#cameraResult {
   display: none;
 }
-#my_camera,
-#my_result {
+#cameraView,
+#cameraResult {
   margin-bottom: 5vh;
   padding: 0;
 }
@@ -72,7 +72,7 @@ video {
   height: 300px !important;
 }
 video,
-#my_result > img {
+#cameraResult > img {
   width: 400px !important;
   height: 300px !important;
   margin-left: auto;
@@ -99,9 +99,6 @@ video,
 }
 .with-errors {
   color: red;
-}
-.toUppercase{
-  text-transform: uppercase;
 }
 /* Images
    ========================================================================== */
@@ -247,7 +244,9 @@ header {
 #landingHeader {
   background-color: #ffede1;
 }
-
+#prescreenQuestion {
+  margin-bottom: 5vh;
+}
 #welcomeText {
   margin-top: 15vh;
   font-size: 48px;
@@ -310,11 +309,11 @@ body > div.container-fluid > form > div > div.col-md-9.bottomPadding > label > s
 #hostLabel > span.select2.select2-container.select2-container--default > span.selection > span > span {
   padding-left: 0 !important;
 }
-#phone{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+#prescreenForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 #select2-reasonSelected-container {
   padding: 0 !important;
 }

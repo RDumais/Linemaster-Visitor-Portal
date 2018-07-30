@@ -53,21 +53,21 @@ $_SESSION['firstnamevisitor'] = strtok($_SESSION['name'], ' ');
     <img id="miniLogo" src="/img/linemaster.svg" alt="">
 </header>
 <div class="container-fluid">
-    <form id="myform" method="post" action="php/submitVisitor.php" enctype="multipart/form-data">
+    <form id="webcamForm" method="post" action="php/submitVisitor.php" enctype="multipart/form-data">
         <div class="row fullHeightRow">
             <div class="col-md-12">
                 <h2 class="text-center questionText">We need a photo of you,
                     <span class="variableHolder"><?php echo $_SESSION['firstnamevisitor']; ?></span>. </h2>
             </div>
-            <div class="offset-md-2 col-md-8 mx-auto" id="my_camera"></div>
-            <div class="offset-md-2 col-md-8 mx-auto" id="my_result"></div>
+            <div class="offset-md-2 col-md-8 mx-auto" id="cameraView"></div>
+            <div class="offset-md-2 col-md-8 mx-auto" id="cameraResult"></div>
             <div class="offset-md-4 col-md-4">
                 <a id="snapshotButton" href="javascript:void(take_snapshot())" type="button">
                     <button class="btn fillButton" type="button"><i class="far fa-camera"></i></button>
                 </a>
                 <button id="clearButton" class="btn outlineButton" type="button"><i class="far fa-undo"></i></button>
             </div>
-            <input id="mydata" type="hidden" name="mydata" value=""/>
+            <input id="photoData" type="hidden" name="photoData" value=""/>
         </div>
         <div class="row submitRow">
             <div class="offset-md-3 col-md-6">
