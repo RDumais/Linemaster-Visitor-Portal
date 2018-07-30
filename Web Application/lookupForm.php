@@ -39,7 +39,6 @@ $getHostsEXEC = sqlsrv_query($conn, $getHostsSTMT);
 $getReasonsSTMT = "SELECT reason FROM dbo.LSC14043_VisitorReasons_mst";
 $getReasonsEXEC = sqlsrv_query($conn, $getReasonsSTMT);
 
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

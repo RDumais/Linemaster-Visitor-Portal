@@ -108,13 +108,10 @@ FROM   dbo.LSC14043_VisitorLog_mst
 WHERE  dbo.LSC14043_Visitor_mst.phone LIKE '{$_SESSION['phone']}'
        AND LSC14043_VisitorLog_mst.sign_out IS NULL";
 
-
-//Execute query
+    //Execute query
     $getResults = sqlsrv_query($conn, $signOutVisitorSTMT);
 
-
-//Relocate to the 'complete.php' page.
+    //Relocate to the 'complete.php' page.
     header('Location: ../signOutConfirmation.php');
     exit();
-
 }

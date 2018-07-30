@@ -30,7 +30,6 @@ if (isset($_POST['phoneData'])) {
         $_SESSION['reason'] = $_POST['reasonData'];
     }
 
-
     //Accessing an external file for database connection
     require('../../php/connect.php');
 
@@ -45,7 +44,6 @@ if (isset($_POST['phoneData'])) {
 
         //Execute query
         $findCurrentVisitorEXEC = sqlsrv_query($conn, $findCurrentVisitorSTMT);
-
 
         //If there is a previous record, display the name to the visitor for confirmation
         if (sqlsrv_has_rows($findCurrentVisitorEXEC)) {
@@ -77,6 +75,4 @@ if (isset($_POST['phoneData'])) {
         echo 'The entered phone number is not in our records. Please verify the phone number or sign in with the button below' . '<br><br>' . '<div class="offset-md-3 col-md-6"><button class="fillButton btn" onclick="document.location.href=\'newVisitorForm.php\'">SIGN IN</button></div>';
         }
     }
-
-
 }

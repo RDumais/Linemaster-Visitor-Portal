@@ -165,8 +165,6 @@ $getReasonsEXEC = sqlsrv_query($conn, $getReasonsSTMT);
             </div>
         </div>
     </form>
-
-
 </div>
 
 <script>
@@ -227,7 +225,7 @@ $getReasonsEXEC = sqlsrv_query($conn, $getReasonsSTMT);
         }
     });
     $('#reason').on('select2:select', function (e) {
-        var inputValidity = document.getElementById("host");
+        var inputValidity = document.getElementById("reason");
         var param = $('#nextNewVisitorBtn');
         clearTimeout(typingTimer);
         if ($('#host').val()) {
@@ -239,7 +237,6 @@ $getReasonsEXEC = sqlsrv_query($conn, $getReasonsSTMT);
             }
         }
     });
-
 
     //Set placeholder text for dynamic drop-downs
     $(document).ready(function () {
@@ -262,6 +259,5 @@ $getReasonsEXEC = sqlsrv_query($conn, $getReasonsSTMT);
     $('#visitorInformation').validator();
 
 </script>
-
 </body>
 </html>
