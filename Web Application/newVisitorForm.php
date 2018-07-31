@@ -41,23 +41,24 @@ $getReasonsSTMT = "SELECT reason FROM dbo.LSC14043_VisitorReasons_mst";
 $getReasonsEXEC = sqlsrv_query($conn, $getReasonsSTMT);
 
 ?>
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<meta name="description" content="Linemaster Visitor Portal">
     <title>Linemaster Vistors</title>
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/fontawesome-all.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-    <script src="js/validator.js"></script>
-    <script src="js/bootstrap.js"></script>
 </head>
 <body>
 <header>
@@ -166,7 +167,11 @@ $getReasonsEXEC = sqlsrv_query($conn, $getReasonsSTMT);
         </div>
     </form>
 </div>
-
+<script src="https://code.jquery.com/jquery-3.3.1.js"
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+<script src="js/validator.js"></script>
+<script src="js/bootstrap.js"></script>
 <script>
 
     //The following few blocks of code allow the visitor to move on from their input box as the complete each one.

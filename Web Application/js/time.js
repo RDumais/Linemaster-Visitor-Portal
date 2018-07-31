@@ -16,7 +16,6 @@ function startTime() {
     var m = today.getMinutes();
     // add a zero in front of numbers<10
     m = checkTime(m);
-    s = checkTime(s);
     document.getElementById('time').innerHTML = h + ":" + m + " " + timeofday;
     t = setTimeout(function () {
         startTime()

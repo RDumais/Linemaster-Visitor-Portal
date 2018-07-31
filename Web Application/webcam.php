@@ -29,21 +29,22 @@ if ($_SESSION['isPreviousVisitor'] == FALSE){
 $_SESSION['firstnamevisitor'] = strtok($_SESSION['name'], ' ');
 
 ?>
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<meta name="description" content="Linemaster Visitor Portal">
     <title>Linemaster Vistors</title>
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/fontawesome-all.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/webcam/webcam.js"></script>
 </head>
 <body>
 <header>
@@ -76,6 +77,11 @@ $_SESSION['firstnamevisitor'] = strtok($_SESSION['name'], ' ');
         </div>
     </form>
 </div>
+<script src="https://code.jquery.com/jquery-3.3.1.js"
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/webcam/webcam.js"></script>
 <script src="js/webcamHandler.js"></script>
 </body>
 </html>
