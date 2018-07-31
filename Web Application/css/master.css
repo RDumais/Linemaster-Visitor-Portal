@@ -247,9 +247,7 @@ header {
 #landingHeader {
   background-color: #ffede1;
 }
-#prescreenQuestion {
-  margin-bottom: 5vh;
-}
+
 #welcomeText {
   margin-top: 15vh;
   font-size: 48px;
@@ -316,11 +314,7 @@ body > div.container-fluid > form > div > div.col-md-9.bottomPadding > label > s
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
-#prescreenForm {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 #select2-reasonSelected-container {
   padding: 0 !important;
 }
