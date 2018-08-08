@@ -16,6 +16,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 //Start the session for the visitor
+session_name("VisitorPortal");
 session_start();
 
 //Set session variables based on visitor's status

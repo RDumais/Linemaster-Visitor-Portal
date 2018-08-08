@@ -11,6 +11,7 @@
  */
 
 //Start the session for the visitor
+session_name("VisitorPortal");
 session_start();
 
 //Create new session variables based on the visitor's name

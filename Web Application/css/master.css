@@ -15,7 +15,7 @@ body {
   width: 100vw;
 }
 .container-fluid {
-  background-color: #ffede1;
+  background-color: #fafafa;
   height: 90vh;
   position: relative;
   padding-left: 5vw;
@@ -78,7 +78,7 @@ video,
   margin-left: auto;
   margin-right: auto;
   display: block;
-  border: 1px solid #db6576 !important;
+  border: 1px solid #6d7fcc !important;
 }
 /* Utility Classes
    ========================================================================== */
@@ -88,14 +88,14 @@ video,
 .pull-left {
   float: left !important;
   line-height: unset !important;
-  color: #db6576 !important;
+  color: #6d7fcc !important;
 }
 .pull-right {
   float: right !important;
   line-height: unset !important;
 }
 .variableHolder {
-  color: #db6576;
+  color: #6d7fcc;
 }
 .with-errors {
   color: red;
@@ -136,7 +136,7 @@ video,
   animation-duration: 2000ms;
   top: calc(28.16657277809074px);
   left: calc(28.16657277809074px);
-  background-color: #db6576;
+  background-color: #6d7fcc;
   position: absolute;
   animation-iteration-count: infinite;
 }
@@ -181,7 +181,7 @@ video,
   animation-duration: 2000ms;
   top: calc(21.666666666666668px);
   left: calc(21.666666666666668px);
-  background-color: #db6576;
+  background-color: #6d7fcc;
   animation: breeding-rhombus-spinner-animation-child-big 2s infinite;
   animation-delay: 0.5s;
 }
@@ -237,7 +237,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffede1;
+  background-color: #fafafa;
 }
 #completeMainText {
   font-size: 4rem;
@@ -245,7 +245,7 @@ header {
   padding: 0;
 }
 #landingHeader {
-  background-color: #ffede1;
+  background-color: #fafafa;
 }
 
 #welcomeText {
@@ -272,7 +272,7 @@ input {
   margin-top: 5px;
   padding-bottom: 5px;
   font-size: 24px !important;
-  border-bottom: 2px solid #ffd5b9 !important;
+  border-bottom: 2px solid #dbe1ff !important;
   text-align: left;
 }
 input,
@@ -292,7 +292,7 @@ label {
 }
 label span {
   font-size: 24px;
-  color: #db6576;
+  color: #6d7fcc;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -335,7 +335,7 @@ body > div.container-fluid > form > div > div.col-md-9.bottomPadding > label > s
   width: 100% !important;
   max-width: 650px !important;
   height: 41px !important;
-  border-bottom: 2px solid #ffd5b9 !important;
+  border-bottom: 2px solid #dbe1ff !important;
 }
 .select2-container--default .select2-selection--single {
   border: none !important;
@@ -357,7 +357,7 @@ body > div.container-fluid > form > div > div.col-md-9.bottomPadding > label > s
 }
 /* Check mark from sign-in and sign-out confirmation screen */
 .finishedCheck {
-  color: #db6576;
+  color: #6d7fcc;
   font-size: 80px;
   display: block;
 }
@@ -384,12 +384,12 @@ html [type="button"],
   font-weight: 300;
 }
 .fillButton {
-  background: #db6576;
+  background: #6d7fcc;
   border: none;
   color: white;
 }
 .outlineButton {
-  border-color: #db6576;
+  border-color: #6d7fcc;
 }
 /* ==========================================================================
    End #14043 Linemaster Visitor CSS

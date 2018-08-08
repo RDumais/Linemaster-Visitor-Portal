@@ -11,6 +11,7 @@
  */
 
 //Start the session for the visitor
+session_name("VisitorPortal");
 session_start();
 
 //Set session variable based on visitor's status
